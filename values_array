@@ -1,0 +1,16 @@
+
+[1mFrom:[0m /home/nitrous/code/labs/key-for-min-value-001-prework-web/key_for_min.rb @ line 11 Object#key_for_min_value:
+
+     [1;34m6[0m: [32mdef[0m [1;34mkey_for_min_value[0m(name_hash)
+     [1;34m7[0m: 
+     [1;34m8[0m:   values_array = name_hash.collect [32mdo[0m |key, value|
+     [1;34m9[0m:     value
+    [1;34m10[0m:   [32mend[0m
+ => [1;34m11[0m:   binding.pry
+    [1;34m12[0m:   values_array = values_array.sort
+    [1;34m13[0m:   selected_array = name_hash.select [32mdo[0m |key, value|
+    [1;34m14[0m:     value == values_array[[1;34m0[0m]
+    [1;34m15[0m:   [32mend[0m
+    [1;34m16[0m:   selected_array[[1;34m0[0m].keys
+    [1;34m17[0m: [32mend[0m
+
