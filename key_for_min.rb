@@ -1,6 +1,16 @@
-# prereqs: iterators, hashes, conditional logic
-# Given a hash with numeric values, return the key for the smallest value
 
-def key_for_min_value(name_hash)
-
+def key_for_min_value(hash)
+  if hash.empty?
+    return nil
+  else
+    current_min = Float::INFINITY
+    min_key = ""
+    hash.each do |k, v|
+      if v < current_min
+        current_min = v
+        min_key = k
+      end
+    end
+    min_key
+  end
 end
